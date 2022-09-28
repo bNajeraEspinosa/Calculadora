@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="calculadora.css">
+
+    <link rel="stylesheet" href="calculadora.js">
+    <style>
+      h1 {
+    min-height: 10rem;
+}
+
+    </style>
+
+<!-- webs usadas
+https://getwaves.io/
+https://www.significados.com/
+https://getbootstrap.com/docs/5.2/components/accordion/
+
+-->
+</head>
+
+<body>
+    <!-- adornos -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,64L0,32L360,32L360,64L720,64L720,128L1080,128L1080,64L1440,64L1440,0L1080,0L1080,0L720,0L720,0L360,0L360,0L0,0L0,0Z"></path></svg>
+    <!-- header -->
+    <h1>Calculadora</h1>
+    <p >Bienvenido, esta es una calculadora muy basica donde tu puedes sumar, restar, multiplicar y dividir</p>
+    <p>coloque sus números aquí y dirijace a la pestaña para obtener info y hacer la operación</p>
+
+    <div class= "container text-center">
+      <div class="row">
+          
+          <div class="col"><input type="text" placeholder="numero1" id="numero1"></div>
+          <div class="col"><input type="text" placeholder="numero2" id="numero2"></div>
+      </div>
+      <p>ESTE DE AQUI SERA TU RESULTADO!!!!!!</p>
+      <div class="row"><output id="resultado">Resultado</output></div>
+  </div>
+    <!-- bootstrap -->
+<!-- suma ------------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Sumar #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>La suma o <strong>adición</strong> es una de las cuatro operaciones básicas de la aritmética que consiste en la <strong>adición de dos o más elementos para llegar a un resultado final donde todo se incluye.</strong><br>
+          El símbolo de la suma es el símbolo más (+) y se intercala entre los elementos que se quiere sumar como, por ejemplo: 2+3=5.<br>
+          La suma puede ser de cualquier elemento tanto de números naturales, enteros, decimales, fracciones, reales y complejos o expresiones algebraicas.</p>
+
+          <div class="row">
+            <button class="col-md-3-btn-btn-success"id="suma">suma</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+<!--fin de seccion 1-->
+<!-- resta ------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Restar #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>La resta o <strong>sustracción</strong> es una de las cuatro operaciones básicas de la aritmética que consiste en la sustracción de dos o más elementos para llegar a un resultado final donde el <strong> resultado final es el elemento original disminuido por el elemento que se quiso restar.</strong><br>
+
+            El símbolo de la resta es el símbolo menos (-) y se intercala entre los elementos que se quiere restar, por ejemplo: 3-2=1.<br>
+            
+            La resta puede ser usado para números naturales, enteros, decimales, fracciones, reales y complejos.<br>
+            
+            La resta se compone por el minuendo que es el elemento total que queremos sustraer, el sustraendo que es la cantidad que queremos restar y la diferencia que es el resultado final de la resta. </p>
+
+          <div class="row">
+            <button class="col-md-3-btn-btn-success"id="resta">resta</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+<!--fin de seccion 2-->
+<!-- div ------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Dividir #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>La división es una de las operaciones básicas de la aritmética que consiste en separar en partes iguales un total. <br>
+
+            En matemáticas, el símbolo de la división es el signo (÷), dos puntos (:) o barra oblicua (/). El signo para la división se ubica entre el dividendo y el divisor, siendo, el dividendo la parte total y el divisor el número de partes iguales que se quiere separar. Por ejemplo, si se quiere dividir 10 unidades en 5 partes iguales se expresaría de la siguiente manera: 10 ÷ 5, 10 :5, 10/5.</p>
+
+          <div class="row">
+            <button class="col-md-3-btn-btn-success"id="división">div</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+<!--fin de seccion 3-->
+<!-- mult ------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      Multiplicar #4
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <p>Multiplicación es una operación matemática que consiste en sumar un número tantas veces como lo indique el otro número que compone la operación, por ejemplo:<br>
+
+        45*3=135 o 45x3=135  <br>
+        
+        La operación anterior indica sumar el primer número tres veces, entonces:<br>
+        
+        45+45+45=135 <br>
+        
+        Sus simbolos son (*) o (x).
+        </p>
+
+        
+
+      <div class="row">
+        <button class="col-md-3-btn-btn-success"id="multiplicación">mult</button>
+    </div>
+
+    </div>
+  </div>
+</div>
+<!--fin de seccion 4-->
+
+<!-- Mas adorno -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,256L0,64L1440,64L1440,320L0,320L0,320Z"></path></svg>
+
+<!-- Link a bootstrap -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="scripts/calculadora.js"></script>
+
+
+</body>
+</html>
